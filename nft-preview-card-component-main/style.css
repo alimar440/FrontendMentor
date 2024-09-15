@@ -67,7 +67,6 @@
     align-items: center;
     margin: 1rem 0;
   }
-  
   .card__details-item--price {
     color: hsl(178, 100%, 50%);
   }
