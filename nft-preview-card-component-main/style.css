@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 2rem;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90dvh;
+  }
+  
+  .card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 70px 0px black;
+    padding-block-end: 3rem;
+    max-width: 18rem;
+    width: 100%;
+  }
+  
+  .card__image-container {
+    background-color: hsl(178, 100%, 50%);
+    height: 20rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+  }
+  
+  .card__image:hover {
+    mix-blend-mode: multiply;
+    cursor: pointer;
+  }
+  
+  .card__title {
+    margin-bottom: 1rem;
+  }
+  
+  .card__title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+  }
+  
+  .card__description {
+    line-height: 1.7rem;
+    color: hsl(215, 51%, 70%);
+  }
+  
+  .card__description--inline {
+    display: inline;
+  }
+  
+  .card__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  .card__details-item--price {
+    color: hsl(178, 100%, 50%);
+  }
+  
+  .card__details-item--time-left {
+    color: hsl(215, 51%, 70%);
+  }
+  
+  .card__details-item--time-left:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+  }
+  
+  .card__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0 ;
+    border-top: 1px solid hsl(215, 51%, 70%);
+  }
+  
+  .card__footer-avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .card__creator {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+
+  }
+  
+  .card__creator-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card__creator-text--label {
+    color: hsl(215, 51%, 70%);
+  }
+  
+  .card__creator-text--name {
+    color: hsl(178, 100%, 50%);
+    margin-left: 0.5rem;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .card {
+      height: 30rem;
+    }
+  
+    .card__image-container {
+      height: 50%;
+    }
+  
+    .card__footer {
+      height: auto;
+    }
+  }
+  
